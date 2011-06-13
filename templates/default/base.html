@@ -9,119 +9,57 @@
     <link rel="stylesheet" href="/media/stylesheets/master.css" type="text/css" media="screen" title="no title" charset="utf-8"/> 
     <!--[if IE]>
     <link rel="stylesheet" href="/media/stylesheets/ieonly.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
-    <![endif]--> 
-    <title>Spot Specific - Spot Specific</title> 
+    <![endif]-->
+{% block extra_stylesheets %}{% endblock extra_stylesheets %}
+    <title>{% block page_title %}DEFAULT TEMPLATE{% endblock page_title %}{% block page_subtitle %} ::  Spot Specific{% endblock page_subtitle %}</title> 
     <style type="text/css" media="screen"> 
-        
         body, th, table .odd {background-color:#a3ddae;}
         a, #footer li a, #breadcrumbs li a  {color:#39b54a;}
- 
-        
         body, #copyright {color: #666;}
         #gallerynav .back, #gallerynav .forward, .gallery_mainimage img {background-color: #666;}
-                
         a:hover, #breadcrumbs li a:hover  {color: #003300;}
- 
         #breadcrumbs li.active a, #navigation ul li a span:hover, #right_column h2, div.entry p.subheading, td.today {color: #000;}
         #footer_content {background-color: #000;}
-        
         td.today{border-color: #000;}
- 
- 
- 
-        
         #navigation ul li a span, #logo h1 a, span.central, #SlideItMoo_outer #SlideItMoo_inner #SlideItMoo_items div.SlideItMoo_element {color: #FFF ;}
         #wrapper {background-color: #FFF ;}
- 
         #breadcrumbs li a, table .odd .table-col-0, .gallery_mainimage, #SlideItMoo_items a, .advert, #frontpage .advert, table .even {background-color: #e9e9e9 ;}
-        
     </style> 
- 
 </head> 
- 
 <body> 
     <!--CONTAINER OPENING DIV--> 
  
     <!--SIDEBAR OPENING DIV--> 
     <div id="masthead_wrapper"> 
-    <div id="masthead"> 
-        <div id="logo"><h1><a href="/"><span>Spot Specific</span></a></h1></div> 
-            <div id="navigation"> 
-        <ul>    
-    <li class='nav_2'> 
-        <a href='http://www.spotspecific.com/tour'><span>Tour</span></a> 
- 
-    </li> 
-    <li class='nav_3'> 
-        <a href='http://www.spotspecific.com/apps'><span>Apps</span></a> 
- 
-    </li> 
-    <li class='nav_4'> 
-        <a href='http://www.spotspecific.com/try-it-now'><span>Try it now</span></a> 
- 
-    </li> 
-    <li class='nav_28'> 
-        <a href='http://www.spotspecific.com/community'><span>Community</span></a> 
- 
-    </li> 
-    <li class='nav_29'> 
-        <a href='http://www.spotspecific.com/publish'><span>Publish</span></a> 
- 
-    </li></ul> 
-</div> 
-    
- 
-    </div></div> 
- 
- 
- 
- 
-<div id="wrapper" class="sshomepage"> 
-    <div id="content"> 
+      <div id="masthead"> 
+        <div id="logo"><h1><a href="/"><span>NoteSpot</span></a></h1></div> 
+          <div id="navigation"> 
+            <ul>    
+              <li class='nav_29'> 
+                <a href='http://www.spotspecific.com/publish'><span>Publish</span></a> 
+              </li>
+            </ul>
+          </div> 
+      </div>
+    </div> 
+    <div id="wrapper" class="sshomepage"> 
+      <div id="content"> 
   {% block body %}
    DEFAULT BODY
   {% endblock %}
-    </div>
-<div class="clear">&nbsp;</div> 
+      </div>
+    <div class="clear">&nbsp;</div> 
 <!--WRAPPER DIV CLOSE--></div> 
+
 <div id ="footer"> 
-    <div id="footer_content"> 
-        <ul> 
-              
-    <li class='nav_1'> 
-        <a href='http://www.spotspecific.com/footer/pricing-sign-up'><span>Pricing &amp; sign-up</span></a> 
- 
-    </li> 
-    <li class='nav_3'> 
-        <a href='http://www.spotspecific.com/footer/news'><span>News</span></a> 
- 
-    </li> 
-    <li class='nav_4'> 
-        <a href='http://www.spotspecific.com/footer/press-room'><span>Press room</span></a> 
- 
-    </li> 
-    <li class='nav_5'> 
-        <a href='http://www.spotspecific.com/footer/terms'><span>Terms</span></a> 
- 
-    </li> 
-    <li class='nav_6'> 
-        <a href='http://www.spotspecific.com/footer/privacy'><span>Privacy</span></a> 
- 
-    </li> 
-    <li class='nav_8'> 
-        <a href='http://www.spotspecific.com/footer/contact'><span>Contact</span></a> 
- 
-    </li> 
-    <li class='nav_9'> 
-        <a href='http://www.spotspecific.com/footer/like-on-facebook'><span>Like on Facebook</span></a> 
- 
-    </li> 
-    <li class='nav_10'> 
-        <a href='http://www.spotspecific.com/footer/follow-on-twitter'><span>Follow on Twitter</span></a> 
- 
-    </li>       </ul> 
+  <div id="footer_content"> 
+      <ul>               
+        <li class='nav_1'> 
+          <a href='http://www.spotspecific.com/footer/pricing-sign-up'><span>Pricing &amp; sign-up</span></a> 
+        </li>
+      </ul> 
     <span class="copyright">&copy;2009-2011 Spot Specific &amp; <a href="http://github.com/SpotSpecific/NoteSpot/">Friends</a></span> 
-    </div> 
+  </div> 
 </div> 
 </body> 
 </html> 
