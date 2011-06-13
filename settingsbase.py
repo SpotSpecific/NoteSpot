@@ -1,6 +1,6 @@
 import version
 
-# Django settings for NoteSpot project.
+# Django setting for NoteSpot project.
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -87,5 +87,5 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'NoteSpot.UserMgr',
     'NoteSpot.NoteMgr',
-    'django_extensions',
+#    'django_extensions',
 )
