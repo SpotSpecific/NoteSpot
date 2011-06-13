@@ -1,1 +1,11 @@
+# Python compiled files
+#   -Dx
 *.pyc
+# runtime settings, make (perm) changes to settings.py.example or settingsbase.py
+#   -Dx
+settings.py
+# vi/vim temp/swap files...
+#   -Dx
+*.swp
+# default SQLite tables...
+NoteSpot.sqlite

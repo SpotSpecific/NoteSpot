@@ -11,7 +11,7 @@ from django.template import Context, loader, RequestContext
 from django.shortcuts import render_to_response, get_object_or_404
 from django.http import Http404, HttpResponse, HttpResponseRedirect, HttpResponseServerError
 from django.core.urlresolvers import reverse
-
 @login_required
+
 def showall(request):
-    print "notes.showall"
+    return render_to_response('notes.html')
