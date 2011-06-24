@@ -420,23 +420,24 @@ ul li.clearfix {
 }
 
 #navigation {
-    /*clear: left;*/
-    float: right;
-    display: block;
-    padding-left: 60px;
+	width: 660px;
+    padding-left: 300px;
     margin-top: 36px;
+	position: absolute;
 }
 
 #navigation li.current a span,#right_column_white li {
     padding-bottom: 5px;
 }
-
+	
 #navigation ul li {
-    border-left: 1px solid #fff;
-    float: left;
     padding-left: 15px;
     padding-right: 15px;
     list-style: none;
+}
+
+.floatRight {
+	float: right !important;
 }
 
 #navigation ul li a {
@@ -1055,3 +1056,22 @@ img.feature-icon {
     margin-right: 5px;
     margin-bottom: 5px;
 }
+
+/*
+ * Note display
+ */
+
+ul#myNotes.grid li {
+	float: left;
+ 	width: 100px;
+	height: 100px;
+	background-color: #F5F6CE;
+	overflow: hidden;
+    padding: 8px;
+    list-style: none;
+}
+
+ul#myNotes.grid li:hover {
+	background-color: yellow;
+}
+

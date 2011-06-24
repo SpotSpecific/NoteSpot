@@ -16,3 +16,6 @@ def login(request):
             print('# Return an "invalid login" error message.')
     else:
         return render_to_response('login.html')
+
+def login(request):
+	return render_to_response('logout.html')

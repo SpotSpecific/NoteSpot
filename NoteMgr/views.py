@@ -1,4 +1,6 @@
 # encoding: utf-8
+# UserMgr/views.py
+
 from django.conf import settings
 from django.core.mail import EmailMessage, send_mail
 from django.contrib.auth import REDIRECT_FIELD_NAME
@@ -15,3 +17,6 @@ from django.core.urlresolvers import reverse
 
 def showall(request):
     return render_to_response('notes.html')
+
+def add(request):
+	return render_to_response('add.html')

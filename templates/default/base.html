@@ -24,6 +24,7 @@
         #navigation ul li a span, #logo h1 a, span.central, #SlideItMoo_outer #SlideItMoo_inner #SlideItMoo_items div.SlideItMoo_element {color: #FFF ;}
         #wrapper {background-color: #FFF ;}
         #breadcrumbs li a, table .odd .table-col-0, .gallery_mainimage, #SlideItMoo_items a, .advert, #frontpage .advert, table .even {background-color: #e9e9e9 ;}
+        
     </style> 
 </head> 
 <body> 
@@ -34,10 +35,23 @@
       <div id="masthead"> 
         <div id="logo"><h1><a href="/"><span>NoteSpot</span></a></h1></div> 
           <div id="navigation"> 
-            <ul>    
-              <li class='nav_29'> 
-                <a href='http://www.spotspecific.com/publish'><span>Publish</span></a> 
+            <ul>
+{% if user.is_authenticated %}    
+              <li> 
+                <a href=''><span>-</span></a> 
               </li>
+              <li class="floatRight"> 
+                <a href=''><span>+</span></a> 
+              </li>              
+{% else %}
+              <li> 
+                <a href=''><span>Create Account</span></a>
+              </li>
+              <li class="floatRight"> 
+                <a href=''><span>Log In</span></a>
+              </li>
+{% endif %}
+              
             </ul>
           </div> 
       </div>

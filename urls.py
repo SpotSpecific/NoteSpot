@@ -1,3 +1,6 @@
+# encoding: utf-8
+# urls.py
+
 import settings
 from django.conf.urls.defaults import *
 
@@ -10,6 +13,7 @@ urlpatterns = patterns('',
     (r'^accounts/', include('UserMgr.urls')),
 
     (r'^notes/', include('NoteMgr.urls')),
+    
 #####################
 # For Testing
 #####################
