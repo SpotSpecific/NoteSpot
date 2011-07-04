@@ -11,11 +11,12 @@ def login(request):
                 django_login(request, user)
                 return redirect(request.GET.get('next','/nonehere'))
             else:
-                print('# Return a "disabled account" error message')
+                return render_to_response('login.html', { 'warning': "Account Disabled" })
         else:
+            return render_to_response('login.html', { 'error': "Invalid Login" })
             print('# Return an "invalid login" error message.')
     else:
         return render_to_response('login.html')
 
-def login(request):
+def logout(request):
 	return render_to_response('logout.html')

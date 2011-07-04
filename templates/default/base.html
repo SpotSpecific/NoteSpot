@@ -57,6 +57,16 @@
       </div>
     </div> 
     <div id="wrapper" class="sshomepage"> 
+      {% if warning %}
+      <div id="panel panel_warning">
+       {{ warning|safe }}
+      </div>
+      {% endif %}
+      {% if error %}
+      <div id="panel panel_error">
+       {{ error|safe }}
+      </div>
+      {% endif %}
       <div id="content"> 
   {% block body %}
    DEFAULT BODY
