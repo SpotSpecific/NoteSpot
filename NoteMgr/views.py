@@ -16,7 +16,8 @@ from django.core.urlresolvers import reverse
 @login_required
 
 def showall(request):
-    return render_to_response('notes.html')
+    allnotes = []
+    return render_to_response('notes.html', { 'notes': allnotes})
 
 def add(request):
 	return render_to_response('add.html')
