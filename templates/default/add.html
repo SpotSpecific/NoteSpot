@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+<ul id="myNotes" class="grid">
+{% for note in allnotes %}
+ <li>{{ note }}</li>
+{% endfor %}
+ <li class="new">Create a new note&hellip;</li>
+</ul>
+{% endblock body %}

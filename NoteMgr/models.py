@@ -10,7 +10,7 @@ from uuid import uuid4
 
 class Note(models.Model):
     name = models.CharField(max_length=120,help_text="Displayed name of this item")
-    slug = models.CharField(max_length=32,help_text="Slug Field, used for short URLs", blank=True, null=True)
+    slug = models.SlugField(max_length=32,help_text="Slug Field, used for short URLs", blank=True, null=True)
     body = models.TextField(help_text='Actual Notefield', blank=True, null=True)
 # UUIF field, used for internal lookups
     uuid = models.CharField(max_length=64, editable=False, blank=True, default=uuid4, unique=True)

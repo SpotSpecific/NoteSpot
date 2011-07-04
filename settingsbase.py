@@ -85,6 +85,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'NoteSpot.common',
     'NoteSpot.UserMgr',
     'NoteSpot.NoteMgr',
 #    'django_extensions',
